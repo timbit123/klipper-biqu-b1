@@ -16,6 +16,10 @@ PID_CALIBRATE HEATER=heater_bed TARGET=100
 - For BLTOUCH only, you can tune z offset with
 
 ```
+# Add some heat first
+SET_HEATER_TEMPERATURE HEATER=extruder TARGET=160
+SET_HEATER_TEMPERATURE HEATER=heater_bed TARGET=60
+
 Z_ENDSTOP_CALIBRATE
 
 #Then change Z position with
